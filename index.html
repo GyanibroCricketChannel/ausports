@@ -1,49 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>@Gyani_Bro</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0px;
-        }
 
-        .jwplayer {
-            position: absolute !important;
-        }
 
-        .jwplayer.jw-flag-aspect-mode {
-            min-height: 100%;
-            max-height: 100%;
-        }
-    </style>
-</head>
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@WatchAddaLive</title>
+  <link rel="stylesheet" href="https://cxh.pages.dev/style.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    #player {
+      width: 100%;
+      max-width: 100%;
+      height: 56.25vw;
+      max-height: 70vh;
+      position: relative;
+      top: 0;
+      left: 0;
+      border: none;
+    }
+
+    @media (max-width: 600px) {
+      #player {
+        height: 50vh;
+      }
+    }
+
+    #telegramBtn {
+      display: block;
+      width: 90%;
+      margin: 20px auto;
+      padding: 15px;
+      text-align: center;
+      background-color: #007bff;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    #telegramBtn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+<style type="text/css">* {user-select: auto !important; -webkit-user-select: auto !important;}</style><input type="hidden" id="inject_idm_text_selection"></head>
 <body>
-    <div id="jwplayerDiv"></div>
-   <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
-    <script type="text/javascript">
-           // Use the PHP configuration directly within the JavaScript
-        var config = {"file":"https://gyanibrocricketchannel.github.io/mpdplayer?Watch=https://bcovlive-a.akamaihd.net/f5fec2a70fa64f86a1bc3ee42e94e355/ap-southeast-2/5833133821001/profile_0/chunklist.m3u8","drm":{"clearkey":{"keyId":"","key":""}}};
+  <iframe id="player" src="https://cdn.cricfb.com/lalopanjo.php?id=osncric&v=m" title="Live match video player" allowfullscreen=""></iframe>
 
-        jwplayer("jwplayerDiv").setup({
-            file: config.file,
-            position: 'bottom',
-            autostart: true,
-            stretching: "",
-            width: "100%",
-            type: "dash",
-            drm: {
-                clearkey: {
-                    keyId: config.drm.clearkey.keyId,
-                    key: config.drm.clearkey.key
-                }
-            }
-        });
-		!0 == confirm("Join our Telegram Group to get All Updates @WatchAddLive") && window.open("https://telegram.me/WatchAddaLive", "_blank");
-    
-	</script>
-</body>
-</html>
-      
+  <a id="telegramBtn" href="https://t.me/WatchAddaLive" target="_blank">Join Our Telegram Channel</a>
+  <script>var joinTelegram = confirm("Join For More Links!!");
+    if (joinTelegram) {
+        window.location.href = "https://t.me/WatchAddaLive";
+    }
+
+    function welcome() {
+        window.open("https://t.me/WatchAddaLive");
+    }</script>
+<!-- Cloudflare Pages Analytics --><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;89ec3c1c820d4609b4a3643417d2cb06&quot;}"></script><!-- Cloudflare Pages Analytics -->
+
+</body></html>
